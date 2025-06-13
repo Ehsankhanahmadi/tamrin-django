@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home blog</title>
+</head>
+<body>
+    <h1>this is home page section blog</h1><br>
+    <div>
+        <ul>
+            {% for blog in data %}
+            <li>
+                name : {{blog.name}} <br>
+                disc : {{blog.disc}} <br>
+                time : {{blog.time}} <br><br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
