@@ -1,6 +1,3 @@
-# dar haleh hazer ma darim emtahan haramidahim
-# dar hein emtehan agar betavanim ma django ra ham mibinim
-# barnameh bad az emtehan ha beh in shekl ast
 # django
 # rest python
 # celery
