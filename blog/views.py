@@ -21,11 +21,10 @@ from .models import blog
 #     },
 # ]
 
+# using database really
 data = blog.objects.all()
 def home(req):
     # return HttpResponse("this is home page section blog")
-    # contexthome = {"data":data}
-    # using database really
     contexthome = {"data":data}
     return render(req,"blog/home.html",contexthome)
 
