@@ -20,7 +20,7 @@ from .models import blog
 #     },
 # ]
 
-# using database really  
+# using database really   
 data = blog.objects.all()
 def home(req):
     # return HttpResponse("this is home page section blog")
