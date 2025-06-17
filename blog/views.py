@@ -2,7 +2,6 @@ from django.shortcuts import render, HttpResponse
 from django.http import Http404
 from .models import blog
 
-# database test
 # data = [
 #     {
 #         "name":"blog one",
