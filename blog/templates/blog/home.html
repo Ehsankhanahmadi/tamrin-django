@@ -11,7 +11,7 @@
         <ul>
             {% for blog in data %}
             <li>
-                name : {{blog.title}} <br>
+                name : <a href="/blog/{{blog.title}}">{{blog.title}}</a><br>
                 disc : {{blog.desc}} <br>
                 time : {{blog.time}} <br><br>
             </li>
