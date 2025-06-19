@@ -29,8 +29,15 @@ def home(req):
 
 def blogp(req,nameblog):
     # return HttpResponse(f"this is {nameblog} blog")
-    # find one with get
+    # GET all and one
+    # data = blog.objects.all() 
     # onedata = blog.objects.get(title=nameblog)
+    # POST
+    # blog.objects.create(title="test",desc="test desc",time='11:22:10')
+    # PUT
+    # blog.objects.update(id=1)
+    # DELETE 
+    # blog.objects.delete(id=3)
     for blogd in data:
         if blogd.title == nameblog:
             contextd = {"namelog":blogd}
