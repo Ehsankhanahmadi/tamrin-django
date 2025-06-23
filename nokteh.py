@@ -1,4 +1,3 @@
-# ta beh alan mahddo diat dashtim
 # django
 # rest python
 # celery
