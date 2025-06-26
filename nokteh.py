@@ -1,4 +1,3 @@
-# kar ba form ha
 # django 
 # rest python
 # celery
