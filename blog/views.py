@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from django.http import Http404
 from .models import blog
 
@@ -43,3 +43,12 @@ def blogp(req,nameblog):
             contextd = {"namelog":blogd}
             return render(req,"blog/blog.html",contextd)
     raise Http404("this blog not found")
+
+def addblog(req):
+    title = req.GET.get("title")
+    desc = req.GET.get("desc")
+    time = req.GET.get("time")
+    if title and desc and time:
+        blog.objects.create(title=title,desc=desc,time=time)
+        return redirect("/blog")
+    return render(req,"blog/addblog.html") 
