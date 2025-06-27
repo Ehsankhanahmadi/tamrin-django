@@ -51,4 +51,11 @@ def addblog(req):
     if title and desc and time:
         blog.objects.create(title=title,desc=desc,time=time)
         return redirect("/blog")
+    # if req.method == "POST":
+    #     title = req.POST.get("title")
+    #     desc = req.POST.get("desc")
+    #     time = req.POST.get("time")
+    #     if title and desc and time:
+    #         blog.objects.create(title=title,desc=desc,time=time)
+    #         return redirect("/blog")
     return render(req,"blog/addblog.html") 
