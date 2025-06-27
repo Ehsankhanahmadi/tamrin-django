@@ -11,10 +11,14 @@
         <ul>
             {% for blog in data %}
             <li>
+                {% if blog.img %}
+                    <img width="150" height="100" src="{{blog.img.url}}" alt="img"><br>
+                {% endif %}
                 name : <a href="/blog/{{blog.title}}">{{blog.title}}</a><br>
                 disc : {{blog.desc}} <br>
                 time : {{blog.time}} <br><br>
             </li>
+            <hr>
             {% endfor %}
         </ul>
     </div>
