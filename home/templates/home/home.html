@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
 </head>
 <body>
-    <h1>this is home page site</h1>
-    <ul>
-        <li><a href="/admin">admin panel</a></li>
-        <li><a href="/blog">blogs</a></li>
-        <li><a href="/blog/add">add blog</a></li>
-    </ul>
+    <!-- tamrin include -->
+    {% include "home/includes/header.html" %}
     <img class="testimg" src="{% static 'home/img/testimg.jpg' %}" alt="img">
     <hr>
     <img class="testimg" src="{% static 'img/testimg.jpg' %}" alt="img">
